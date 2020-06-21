@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-app';
+  page = 'recipes';
+
+  onPageSwitched(pageName: string) {
+    this.page = pageName;
+  }
+
 }
